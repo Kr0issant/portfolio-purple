@@ -1,0 +1,200 @@
+body {
+    margin: 0;
+}
+
+#title {
+    text-align: center;
+    color: #424874;
+    background-color: #F4EEFF;
+}
+
+#title h1 {
+    margin-top: 20px;
+    font-family: "Titan One";
+    font-size: 5rem;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    margin-bottom: 0;
+}
+
+#title h3 {
+    font-family: 'Kanchenjunga';
+    font-size: 2rem;
+    margin: 0;
+}
+
+.title-layer1 {
+    background-color: #eee6fd;
+}
+
+.title-layer2 {
+    background-color: #DCD6F7;
+    padding: 20px 0px;
+}
+
+.title-layer3 {
+    background-color: #c2bcf4;
+    height: 80px;
+}
+
+.title-layer4 {
+    background-color: #acaaed;
+    height: 50px;
+}
+
+#introduction {
+    background-color: #F4EEFF;
+    color: #424874;
+    text-align: center;
+    font-family: 'Kanchenjunga';
+    padding-bottom: 50px;
+}
+
+img.me {
+    border: 2px solid #424874;
+    border-radius: 50%;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-top: 0;
+    font-family: 'Kanchenjunga';
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-family: 'Kanchenjunga';
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+button.mail {
+    background-color: #979aea;
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: padding 1s, background-color 1s;
+}
+button.mail:hover {
+    padding: 10px 100px;
+    background-color: #8487d9;
+    transition: padding 0.5s;
+}
+button.mail:active {
+    background-color: #7577c6;
+}
+
+
+p {
+    color: #535884;
+    font-size: 1.2rem;
+    margin: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+hr {
+    border: dotted #A6B1E1 6px;
+    border-bottom: none;
+    margin-top: 100px;
+    width: 5%;
+}
+
+.topic {
+    text-decoration: underline;
+}
+
+#projects {
+    color: #424874;
+    background-color: #F4EEFF;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#skills {
+    color: #424874;
+    background-color: #F4EEFF;
+    text-align: center;
+    padding-bottom: 50px;
+    font-family: 'Kanchenjunga';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ul.skills-list {
+    list-style-type: none;
+    text-align: left;
+}
+
+li.skill {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+#skills h5 {
+    font-size: 1.5rem;
+    margin-left: 150px;
+}
+
+#skills img {
+    border: 2px solid #A6B1E1;
+    border-radius: 50%;
+    padding: 3px;
+    float: left;
+    transition: transform 1s;
+}
+
+#skills img:hover {
+    transform: scale(1.05);
+    transition: transform 1s;
+}
+
+#contact {
+    color: #424874;
+    background-color: #F4EEFF;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+footer {
+    background-color: #979aea;
+    padding: 50px 0px;
+}
+
+.footer-text {
+    color: #F4EEFF;
+    text-align: center;
+    font-family: 'Merriweather', 'sans-seriff';
+}
+
+svg.moon path{
+    transition: fill 1s;
+}
+svg.moon path:hover {
+    fill: #A6B1E1;
+    transition: fill 0.5s;
+}
+
+svg.star path{
+    transition: fill 1s;
+}
+svg.star path:hover {
+    fill: #A6B1E1;
+    transition: fill 0.5s;
+}
+
+svg.rocket {
+    transition: transform 2s;
+}
+svg.rocket:hover {
+    transform:translate(50px,-50px);
+    transition: transform 0.5s;
+}
