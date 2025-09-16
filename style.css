@@ -3,14 +3,15 @@ body {
     cursor: none;
 }
 
+/* --- Fancy Effects ---*/
 .custom-cursor {
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 50%;
     position: fixed;
     pointer-events: none;
-    z-index: 9999;
+    z-index: 999;
     transform: translate(-50%, -50%);
     transition: transform 0.1s ease-out;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -19,6 +20,41 @@ body {
     backdrop-filter: blur(3px);
 }
 
+::selection {
+    color: white;
+    background-color: #989beb;
+}
+
+/* --- Scrollbar --- */
+.scroll-progress-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0px;
+  height: 10px;
+  border-radius: 0px 10px 10px 0px;
+  background-color: #989beb;
+  width: 0;
+  z-index: 998;
+  transition: width 0.1s ease;
+}
+
+/* --- General --- */
+p {
+    color: #535884;
+    font-size: 1.2rem;
+    margin: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+hr {
+    border: dotted #A6B1E1 6px;
+    border-bottom: none;
+    margin-top: 100px;
+    width: 5%;
+}
+
+/* --- Main ---*/
 #title {
     text-align: center;
     color: #424874;
@@ -59,6 +95,7 @@ body {
     height: 50px;
 }
 
+/* --- Introduction ---*/
 #introduction {
     background-color: #F4EEFF;
     color: #424874;
@@ -79,56 +116,7 @@ h2 {
     font-family: 'Kanchenjunga';
 }
 
-#contact h2 {
-    margin-bottom: 20px;
-}
-
-h4 {
-    font-size: 1.5rem;
-    font-family: 'Kanchenjunga';
-    margin-top: 0px;
-    margin-bottom: 50px;
-}
-
-button.mail {
-    background-color: #979aea;
-    cursor: none;
-    color: white;
-    font-size: 1.5rem;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 20px;
-    transition: padding 1s, background-color 1s;
-}
-button.mail:hover {
-    padding: 10px 100px;
-    background-color: #8487d9;
-    transition: padding 0.5s;
-}
-button.mail:active {
-    background-color: #7577c6;
-}
-
-
-p {
-    color: #535884;
-    font-size: 1.2rem;
-    margin: 0;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-hr {
-    border: dotted #A6B1E1 6px;
-    border-bottom: none;
-    margin-top: 100px;
-    width: 5%;
-}
-
-.topic {
-    text-decoration: underline;
-}
-
+/* --- Projects ---*/
 #projects {
     color: #424874;
     background-color: #F4EEFF;
@@ -136,6 +124,7 @@ hr {
     padding-bottom: 50px;
 }
 
+/* --- Skills ---*/
 #skills {
     color: #424874;
     background-color: #F4EEFF;
@@ -146,6 +135,10 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.topic {
+    text-decoration: underline;
 }
 
 ul.skills-list {
@@ -194,6 +187,38 @@ footer {
     font-family: 'Merriweather', 'sans-seriff';
 }
 
+/* --- Contact ---*/
+#contact h2 {
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-family: 'Kanchenjunga';
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+button.mail {
+    background-color: #979aea;
+    cursor: none;
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: padding 1s, background-color 1s;
+}
+button.mail:hover {
+    padding: 10px 100px;
+    background-color: #8487d9;
+    transition: padding 0.5s;
+}
+button.mail:active {
+    background-color: #7577c6;
+}
+
+/* --- SVG Elements ---*/
 svg.moon path{
     transition: fill 1s;
 }
