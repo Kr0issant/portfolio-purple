@@ -2,6 +2,9 @@ body {
     margin: 0;
     cursor: none;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 
 /* --- Fancy Effects ---*/
 .custom-cursor {
@@ -93,6 +96,13 @@ hr {
 .title-layer4 {
     background-color: #acaaed;
     height: 50px;
+}
+
+.hamburger-div > svg {
+    transition: fill 0.5s ease-out;
+}
+.hamburger-div > svg:hover {
+    fill: #8487ce;
 }
 
 /* --- Introduction ---*/
@@ -239,6 +249,11 @@ svg.rocket {
     transition: transform 2s;
 }
 svg.rocket:hover {
-    transform:translate(50px,-50px);
-    transition: transform 0.5s;
+    transform:translate(150px,-150px);
+    transition: transform 1.5s ease-out;
+}
+
+/* --- Nav Star --- */
+.nav-star {
+    fill: rgba(166, 177, 225, 0.5);
 }
