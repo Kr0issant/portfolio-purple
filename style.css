@@ -138,6 +138,110 @@ h2 {
     padding-bottom: 50px;
 }
 
+#projects h2 {
+    margin-bottom: 0;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 35px;
+    margin: 15px;
+}
+
+.project {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: #DCD6F7;
+    border-radius: 50px;
+    padding: 0px 50px;
+    padding-bottom: 5px;
+    transition: transform 0.1s ease-out;
+}
+
+.project:hover {
+    animation: wiggle 0.3s ease-out;
+}
+
+@keyframes wiggle {
+    33% {
+        transform: rotate(0.69deg);
+    }
+    66% {
+        transform: rotate(-1.38deg);
+    }
+    100% {
+        transform: rotate(0.69deg);
+    }
+}
+
+.project-card {
+    /* border: 2px solid blue; */
+    width: 500px;
+}
+
+.project-card > img {
+    width: 500px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 40px;
+    border: 2px solid #424874;
+}
+
+.project-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    gap: 30px;
+}
+
+.project-links img {
+    transition: transform 0.5s ease-out;
+}
+.project-links img:hover {
+    transform: scale(1.05);
+}
+
+.project-info {
+    /* border: 2px solid blue; */
+    margin-top: 40px;
+    text-align: start;
+    width: 500px;
+}
+
+h3 {
+    font-size: 2rem;
+    font-family: 'Kanchenjunga';
+}
+
+#projects h3 {
+    margin: 0;
+}
+
+.project-info h4 {
+    margin-bottom: 0;
+}
+
+ul {
+    margin: 0;
+    font-family: 'Kanchenjunga';
+}
+
+.hidden {
+    display: none;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    cursor: none;
+}
+.prev-btn img{
+    transform: rotate(180deg);
+}
+
 /* --- Skills ---*/
 #skills {
     color: #424874;
@@ -243,7 +347,9 @@ button.mail:active {
 .socials img:hover {
     transform: scale(1.05);
 }
-.socials a {
+
+a {
+    text-decoration: none;
     cursor: none;
 }
 
@@ -275,4 +381,16 @@ svg.rocket:hover {
 /* --- Nav Star --- */
 .nav-star {
     fill: rgba(166, 177, 225, 0.5);
+}
+
+/* --- MOBILE --- */
+@media (max-width: 750px) {
+    .custom-cursor {
+        display: none;
+    }
+
+    .project, .carousel {
+        flex-direction: column;
+        align-items: center;
+    }
 }
