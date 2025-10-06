@@ -392,13 +392,15 @@ svg.rocket:hover {
 }
 
 /* --- MOBILE --- */
-@media (max-width: 750px) {
+@media (max-width: 1400px) {
     .custom-cursor {
         display: none;
     }
 
-    .project, .carousel {
+    .project {
         flex-direction: column;
+        justify-content: flex-start;
         align-items: center;
+        height: 980px;
     }
 }
