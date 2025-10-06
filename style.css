@@ -157,7 +157,7 @@ h2 {
     background-color: #DCD6F7;
     border-radius: 50px;
     padding: 0px 50px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     transition: transform 0.1s ease-out;
 }
 
@@ -193,7 +193,7 @@ h2 {
 .project-links {
     display: flex;
     justify-content: center;
-    margin-top: 5px;
+    margin-top: 10px;
     gap: 30px;
 }
 
@@ -208,7 +208,7 @@ h2 {
     /* border: 2px solid blue; */
     margin-top: 40px;
     text-align: start;
-    width: 500px;
+    width: 400px;
 }
 
 h3 {
@@ -393,14 +393,15 @@ svg.rocket:hover {
 
 /* --- MOBILE --- */
 @media (max-width: 1400px) {
-    .custom-cursor {
-        display: none;
-    }
-
     .project {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
         height: 980px;
+    }
+}
+@media (max-width: 1000px) {
+    .custom-cursor {
+        display: none;
     }
 }
